@@ -1,6 +1,7 @@
 'use client';
 import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -14,4 +15,4 @@ const theme = createTheme({
   },
 });
 
-export default theme;
+export default responsiveFontSizes (theme);
